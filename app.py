@@ -42,7 +42,7 @@ def update_user(id):
     
     return redirect(url_for('index'))
 
-# Change made here: methods=['POST']
+# methods=['POST']
 @app.route('/delete_user/<int:id>', methods=['POST'])
 def delete_user(id):
     cursor = db.cursor()
